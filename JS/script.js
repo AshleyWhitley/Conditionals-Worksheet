@@ -25,6 +25,22 @@ March 17, 2015
  90F is 32.22C
  */
 
+//variables
+var DegreesF = 32;
+var DegreesC = 0;
+var UnitF = ((DegreesC * 9/5) + 32); //correct formula to convert F to C
+var UnitC = (DegreesF - 32) * 5/9; //correct formula to convert C to F
+
+
+if(DegreesF){
+    console.log("The temperature is" + " " + UnitC + " " + "degrees Celsius.");
+
+}if(DegreesC){
+    console.log("The temperature is" +" "+ UnitF +" "+ "degrees Fahrenheit.");
+}
+
+
+
 
 /*
  Check the Login
@@ -43,7 +59,10 @@ Given:
  “Password does not match our records.”  -if the username matches but the password does not
  */
 
-
+var userName;
+var password;
+var CuserName;
+var Cpassword;
 
 /*
 Movie Ticket Price
