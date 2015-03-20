@@ -26,7 +26,7 @@ March 17, 2015
  */
 
 //variables
-var DegreesF = 32;
+/*var DegreesF = 32;
 var DegreesC = 0;
 var UnitF = ((DegreesC * 9/5) + 32); //correct formula to convert F to C
 var UnitC = (DegreesF - 32) * 5/9; //correct formula to convert C to F
@@ -37,7 +37,7 @@ if(DegreesF){
 
 }else(DegreesC){
     console.log("The temperature is" +" "+ UnitF +" "+ "degrees Fahrenheit.");
-}
+}*/
 
 
 
@@ -96,11 +96,12 @@ Movie Ticket Price
 
 var ticketPrice = 12;
 var DiscountS = 7;
-var timeSpecial;
-var senior = 55
+var senior = 55;
+var age = 20;
+var dayRate = true;
 
-
-if(myMoney >= cost || getPaid){
-    console.log("Ashley can now go buy" +" "+newGame+" "+"today.")
+if(age >= senior || dayRate){
+    console.log("The ticket price is" +" "+ DiscountS +".");
 }else{
-    console.log("Ashley will have to wait till I get paid to buy the new game.");
+    console.log("The ticket price is" + " " + ticketPrice+".");
+}
