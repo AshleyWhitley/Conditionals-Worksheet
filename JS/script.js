@@ -35,10 +35,9 @@ var UnitC = (DegreesF - 32) * 5/9; //correct formula to convert C to F
 if(DegreesF){
     console.log("The temperature is" + " " + UnitC + " " + "degrees Celsius.");
 
-}if(DegreesC){
+}else(DegreesC){
     console.log("The temperature is" +" "+ UnitF +" "+ "degrees Fahrenheit.");
 }
-
 
 
 
@@ -60,9 +59,26 @@ Given:
  */
 
 var userName;
-var password;
+var passWord;
 var CuserName;
 var Cpassword;
+
+var userName = prompt("What is your username?");
+
+if(userName === 'MissyGotGame'){
+    alert("Thank you.");
+}else{
+    alert("User not found. Try Again.") //if they type in anything other than yes or no
+}
+
+var passWord = prompt("What is your password?");
+
+if(passWord === '123456'){
+    alert("Welcome," +" "+ userName+ "!");
+}else{
+    alert("Password does not match our records.")
+}
+
 
 /*
 Movie Ticket Price
@@ -78,4 +94,13 @@ Movie Ticket Price
  “The ticket price is X”
  */
 
+var ticketPrice = 12;
+var DiscountS = 7;
+var timeSpecial;
+var senior = 55
 
+
+if(myMoney >= cost || getPaid){
+    console.log("Ashley can now go buy" +" "+newGame+" "+"today.")
+}else{
+    console.log("Ashley will have to wait till I get paid to buy the new game.");
